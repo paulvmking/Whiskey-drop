@@ -10,14 +10,28 @@
 </head>
 
 <body>
-	<article class="container">
+	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+		<a href="/" class="navbar-brand">Whiskey Drop</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+			<li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+		</ul>
+        <div class="d-none d-md-block">
+         <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+         <a href="/login">Sign In / Sign Up</a>
+        </div>
+	</nav>
+	<article class="container mt-3">
 		<!-- Callout -->
 		<div class="row">
 			<div class="col-12">
-				<section class="callout">
+				<section class="callout jumbotron text-center">
 					<h1>The finest whiskeys delivered to your doorstep.</h1>
 					<p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-						<s>€19.99</s> <strong><mark>First one is free!</mark></strong></p>
+						<s class="d-none d-sm-inline">€19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>First one is free!</mark></strong></p>
 					<button class="btn btn-success btn-lg">Sign Up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
@@ -30,7 +44,7 @@
 		<!-- Quotes -->
 		<section class="quotes">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Quotes:</h2>
 				</div>
 			</div>
@@ -55,7 +69,7 @@
 		<!-- Features -->
 		<section class="features">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Features:</h2>
 				</div>
 			</div>
