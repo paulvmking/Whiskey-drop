@@ -63,7 +63,7 @@
 						<s class="d-none d-sm-inline">€19.99</s>
 						<span class="d-inline d-sm-none"><br></span>
 						<strong><mark>First one is free!</mark></strong></p>
-					<button class="btn btn-success btn-lg">Sign Up!</button>
+					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
 				</section>
@@ -157,6 +157,36 @@
 		</section>
 		<!-- /.features -->
 	</article>
+	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+							<label for="repeatPassword">Repeat Password</label>
+							<input type="password" class="form-control" id="repeatPassword" placeholder=" Repeat Password">
+                        </div>
+							<button type="submit" class="btn btn-success">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
