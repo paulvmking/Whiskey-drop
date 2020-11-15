@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -44,7 +47,7 @@
 			<a href="/login">Sign In / Sign Up</a>
 		</div>
 	</nav>
-	<article class="container mt-3">
+	<!-- <div class="container alert-container">
 		<div class="row d-none d-sm-block">
 			<div class="col-12">
 				<div class="alert alert-warning">
@@ -53,8 +56,10 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
 
-		<!-- Callout -->
+	<!-- Callout -->
+	<div class="container-fluid callout-container">
 		<div class="row">
 			<div class="col-12">
 				<section class="callout jumbotron text-center">
@@ -69,10 +74,12 @@
 				</section>
 			</div>
 		</div>
-		<!-- /.callout -->
-		<hr>
+	</div>
+	<!-- /.callout -->
+	</div>
 
-		<!-- Quotes -->
+	<!-- Quotes -->
+	<div class="container quotes-container">
 		<section class="quotes">
 			<div class="row">
 				<div class="col-12 my-5">
@@ -107,11 +114,14 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
 		</section>
 		<!-- /.quotes -->
-		<hr>
+	</div>
 
-		<!-- Features -->
+	<!-- Features -->
+	<div class="container features-container">
 		<section class="features">
 			<div class="row">
 				<div class="col-12 my-5">
@@ -156,7 +166,7 @@
 			</div>
 		</section>
 		<!-- /.features -->
-	</article>
+	</div>
 	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -177,11 +187,11 @@
 							<label for="password">Password</label>
 							<input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
-                        <div class="form-group">
-							<label for="repeatPassword">Repeat Password</label>
-							<input type="password" class="form-control" id="repeatPassword" placeholder=" Repeat Password">
+							<div class="form-group">
+								<label for="repeatPassword">Repeat Password</label>
+								<input type="password" class="form-control" id="repeatPassword" placeholder=" Repeat Password">
                         </div>
-							<button type="submit" class="btn btn-success">Submit</button>
+								<button type="submit" class="btn btn-success">Submit</button>
 					</form>
 				</div>
 			</div>
